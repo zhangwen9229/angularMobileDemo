@@ -1,0 +1,26 @@
+{
+  "name": "angularMobileDemo",
+  "homepage": "https://github.com/zhangwen9229/angularMobileDemo",
+  "authors": [
+    "zhangwen9229 <378253487@qq.com>"
+  ],
+  "description": "web app demo made of angular",
+  "main": "index",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "angular-ui-router": "~0.2.15"
+  }
+}
