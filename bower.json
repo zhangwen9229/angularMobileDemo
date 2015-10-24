@@ -5,7 +5,7 @@
     "zhangwen9229 <378253487@qq.com>"
   ],
   "description": "web app demo made of angular",
-  "main": "index",
+  "main": "./js/index.js",
   "moduleType": [
     "amd"
   ],
