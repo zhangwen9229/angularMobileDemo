@@ -19,13 +19,15 @@ webpackJsonp([1],{
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
-	  value: true
+		value: true
 	});
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
 	var HomeController = function HomeController() {
-	  _classCallCheck(this, HomeController);
+		_classCallCheck(this, HomeController);
+
+		this.testname = '章文顺 QQ:378253487';
 	};
 
 	exports['default'] = angular.module('home.controller', []).controller('HomeController', HomeController);

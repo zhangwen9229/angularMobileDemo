@@ -4,17 +4,17 @@ class MsgStoreService {
     constructor() {
         this._messages = [{
             text: "Hello, World!",
-            date: new Date
+            date: new Date()
         }];
     }
     add(text) {
         this._messages.push({
             text: text,
-            date: new Date
+            date: new Date()
         });
     }
     all() {
-        return this._messages
+        return this._messages;
     }
 }
 

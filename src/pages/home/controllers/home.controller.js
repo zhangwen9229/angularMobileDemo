@@ -1,9 +1,11 @@
 'use strict';
 
 class HomeController {
-  constructor() {}
+	constructor() {
+		this.testname = "章文顺 QQ:378253487";
+	}
 }
 
 export default angular
-  .module('home.controller', [])
-  .controller('HomeController', HomeController);
+	.module('home.controller', [])
+	.controller('HomeController', HomeController);

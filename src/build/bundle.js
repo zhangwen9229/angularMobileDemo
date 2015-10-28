@@ -74,7 +74,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e264f18c75684684e121"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b99332649e0cc0d056e6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -29685,7 +29685,8 @@
 	exports['default'] = __webpack_require__(5).module('lazyApp', [__webpack_require__(9),
 	// @TODO: It's a hack! https://github.com/ocombe/ocLazyLoad/issues/179
 	(function () {
-	  __webpack_require__(10);return 'oc.lazyLoad';
+	  __webpack_require__(10);
+	  return 'oc.lazyLoad';
 	})(),
 	/*
 	  uncomment to move msg-store to bundle.js only instead
@@ -35437,7 +35438,7 @@
 /* 12 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1>Home</h1>\r\n<div ui-view>Only 1.bundle.js</div>\r\n"
+	module.exports = "<h1>Home</h1>\r\n<div ui-view>Only 1.bundle.js</div>\r\n\r\n<p>{{vm.testname}}</p>"
 
 /***/ },
 /* 13 */
@@ -35455,62 +35456,68 @@
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
-	  value: true
+	    value: true
 	});
 	function messagesRouting($stateProvider) {
-	  $stateProvider.state('messages', {
-	    url: '/messages',
-	    template: __webpack_require__(18),
-	    controller: 'MessagesController as vm',
-	    resolve: {
-	      loadMessagesController: ["$q", "$ocLazyLoad", function loadMessagesController($q, $ocLazyLoad) {
-	        return $q(function (resolve) {
-	          __webpack_require__.e/* nsure */(2, function () {
-	            var module = __webpack_require__(20);
-	            $ocLazyLoad.load({ name: module.name });
-	            resolve(module.controller);
-	          });
-	        });
-	      }]
-	    }
-	  }).state('messages.all', {
-	    url: '/all',
-	    template: __webpack_require__(19),
-	    controller: 'MessagesAllController as vm',
-	    resolve: {
-	      loadMessagesAllController: ["$q", "$ocLazyLoad", function loadMessagesAllController($q, $ocLazyLoad) {
-	        return $q(function (resolve) {
-	          __webpack_require__.e/* nsure */(3, function () {
-	            var module = __webpack_require__(21);
-	            $ocLazyLoad.load({ name: module.name });
-	            resolve(module.controller);
-	          });
-	        });
-	      }]
-	    }
-	  }).state('messages.new', {
-	    url: '/new',
-	    templateProvider: ["$q", function templateProvider($q) {
-	      return $q(function (resolve) {
-	        __webpack_require__.e/* nsure */(4, function () {
-	          return resolve(__webpack_require__(24));
-	        });
-	      });
-	    }],
-	    controller: 'MessagesNewController as vm',
-	    resolve: {
-	      loadMessagesNewController: ["$q", "$ocLazyLoad", function loadMessagesNewController($q, $ocLazyLoad) {
-	        return $q(function (resolve) {
-	          __webpack_require__.e/* nsure */(5, function () {
-	            // load only controller module
-	            var module = __webpack_require__(25);
-	            $ocLazyLoad.load({ name: module.name });
-	            resolve(module.controller);
-	          });
-	        });
-	      }]
-	    }
-	  });
+	    $stateProvider.state('messages', {
+	        url: '/messages',
+	        template: __webpack_require__(18),
+	        controller: 'MessagesController as vm',
+	        resolve: {
+	            loadMessagesController: ["$q", "$ocLazyLoad", function loadMessagesController($q, $ocLazyLoad) {
+	                return $q(function (resolve) {
+	                    __webpack_require__.e/* nsure */(2, function () {
+	                        var module = __webpack_require__(20);
+	                        $ocLazyLoad.load({
+	                            name: module.name
+	                        });
+	                        resolve(module.controller);
+	                    });
+	                });
+	            }]
+	        }
+	    }).state('messages.all', {
+	        url: '/all',
+	        template: __webpack_require__(19),
+	        controller: 'MessagesAllController as vm',
+	        resolve: {
+	            loadMessagesAllController: ["$q", "$ocLazyLoad", function loadMessagesAllController($q, $ocLazyLoad) {
+	                return $q(function (resolve) {
+	                    __webpack_require__.e/* nsure */(3, function () {
+	                        var module = __webpack_require__(21);
+	                        $ocLazyLoad.load({
+	                            name: module.name
+	                        });
+	                        resolve(module.controller);
+	                    });
+	                });
+	            }]
+	        }
+	    }).state('messages.new', {
+	        url: '/new',
+	        templateProvider: ["$q", function templateProvider($q) {
+	            return $q(function (resolve) {
+	                __webpack_require__.e/* nsure */(4, function () {
+	                    return resolve(__webpack_require__(24));
+	                });
+	            });
+	        }],
+	        controller: 'MessagesNewController as vm',
+	        resolve: {
+	            loadMessagesNewController: ["$q", "$ocLazyLoad", function loadMessagesNewController($q, $ocLazyLoad) {
+	                return $q(function (resolve) {
+	                    __webpack_require__.e/* nsure */(5, function () {
+	                        // load only controller module
+	                        var module = __webpack_require__(25);
+	                        $ocLazyLoad.load({
+	                            name: module.name
+	                        });
+	                        resolve(module.controller);
+	                    });
+	                });
+	            }]
+	        }
+	    });
 	}
 	messagesRouting.$inject = ["$stateProvider"];
 
