@@ -7,6 +7,7 @@ module.exports = function() {
 	// global.$ = global.jQuery = require('jquery');
 	// require('velocity-animate');
 	require('angular');
+	global.util = require('../lib/utility');
 	// global.moment = require('moment');
 	// require('node-lumx');
 };

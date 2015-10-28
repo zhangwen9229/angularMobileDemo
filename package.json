@@ -1,35 +1,53 @@
 {
-    "name": "angularmobiledemo",
-    "version": "1.0.0",
-    "description": "web app made of angular",
-    "main": "js/main.js",
-    "dependencies": {
-        "angular": "^1.4.7"
-    },
-    "devDependencies": {
-        "babel-core": "5.6.20",
-        "babel-loader": "5.3.1",
-        "css-loader": "0.15.3",
-        "jshint": "2.8.0",
-        "jshint-loader": "0.8.3",
-        "ng-annotate-loader": "0.0.6",
-        "node-sass": "3.3.3",
-        "sass-loader": "2.0.1",
-        "style-loader": "0.12.3",
-        "webpack": "1.10.1",
-        "webpack-dev-server": "1.10.1"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/zhangwen9229/angularMobileDemo.git"
-    },
-    "author": "zhangwen9229",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/zhangwen9229/angularMobileDemo/issues"
-    },
-    "homepage": "https://github.com/zhangwen9229/angularMobileDemo#readme"
+  "name": "angularmobiledemo",
+  "version": "1.0.0",
+  "description": "web app made of angular",
+  "main": "js/main.js",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-ui-router": "^0.2.15",
+    "bourbon": "^4.2.6",
+    "jquery": "^2.1.4",
+    "mdi": "^1.2.65",
+    "moment": "^2.10.6",
+    "node-lumx": "^1.0.0",
+    "oclazyload": "^1.0.6",
+    "raw-loader": "^0.5.1",
+    "velocity-animate": "^1.2.3"
+  },
+  "devDependencies": {
+    "babel-core": "5.6.20",
+    "babel-loader": "5.3.1",
+    "css-loader": "0.15.3",
+    "file-loader": "^0.8.4",
+    "imports-loader": "^0.6.5",
+    "jshint": "2.8.0",
+    "jshint-loader": "0.8.3",
+    "ng-annotate-loader": "0.0.6",
+    "karma": "^0.12.36",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-html-reporter": "^0.2.6",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-webpack": "^1.5.1",
+    "node-sass": "3.3.3",
+    "sass-loader": "2.0.1",
+    "style-loader": "0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "1.10.1",
+    "webpack-dev-server": "1.10.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangwen9229/angularMobileDemo.git"
+  },
+  "author": "zhangwen9229",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhangwen9229/angularMobileDemo/issues"
+  },
+  "homepage": "https://github.com/zhangwen9229/angularMobileDemo#readme"
 }

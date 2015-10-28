@@ -14,7 +14,7 @@ module.exports = {
         app: ['webpack/hot/dev-server','./core/bootstrap.js']
     },
     output: {
-        path: PATHS.app,
+        path: PATHS.app+"/build/",
         filename: 'bundle.js'
     },
     module: {
@@ -25,6 +25,9 @@ module.exports = {
             test: /\.js$/,
             loader: 'ng-annotate!babel!jshint',
             exclude: /node_modules|bower_components/
+        }, {
+            test: /\.html$/,
+            loader: 'raw'
         }]
     },
     plugins: [
