@@ -15,7 +15,6 @@
     "babel-loader": "^6.2.0",
     "baggage-loader": "^0.2.4",
     "bootstrap": "^3.3.5",
-    // "bourbon": "^4.2.6",//for sass
     "css-loader": "^0.23.0",
     "file-loader": "^0.8.5",
     "html-loader": "^0.4.0",
