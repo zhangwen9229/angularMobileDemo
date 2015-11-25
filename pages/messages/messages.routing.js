@@ -21,7 +21,15 @@ function messagesRouting($stateProvider) {
             }
         }).state('messages.all', {
             url: '/all',
-            template: require('./views/messages.all.html'),
+            // templateUrl: function(stateParams) {//此种方法不适用，调试可用
+            //     return './pages/messages/views/messages.all.html';
+            // },
+            // templateProvider: ($q) => {//动态加载
+            //     return $q((resolve) => {
+            //         require.ensure([], () => resolve(require('./views/messages.all.html')));
+            //     });
+            // },
+            template: require('./views/messages.all.html'),//预编译
             controller: 'MessagesAllController as vm',
             resolve: {
                 loadMessagesAllController: ($q, $ocLazyLoad) => {
@@ -60,7 +68,7 @@ function messagesRouting($stateProvider) {
             }
         });
 }
-
+// messagesRouting.$inject = ['$stateProvider'];
 export default angular
     .module('messages.routing', [])
     .config(messagesRouting);

@@ -3,7 +3,6 @@
 class MessagesController {
 	constructor() {
 		util.log("MessagesController");
-		util.log(this.scope);
 	}
 }
 
