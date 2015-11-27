@@ -2,7 +2,7 @@
 
 class HomeController {
 	constructor() {
-		this.testname = "章文顺 QQ:378253487";
+		this.testname = "章文顺 QQ:378253487  Email:378253487@qq.com";
 	}
 }
 
