@@ -1,5 +1,7 @@
 
-export default angular.module('MyFilterApp', [])
+var app = require("../app");
+
+export default app
 	.filter(
 		'to_trusted', ['$sce', function($sce) {
 			return function(text) {
