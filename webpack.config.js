@@ -11,11 +11,16 @@ var PATHS = {
 module.exports = {
     context: PATHS.app,
     entry: {
-        app: [__dirname + '/core/bootstrap.js']
+        app: [
+            'webpack-dev-server/client?http://127.0.0.1:9000', // WebpackDevServer host and port
+            'webpack/hot/dev-server',
+            __dirname + '/core/bootstrap.js'
+        ]
     },
     output: {
         path: PATHS.app + '/dist/',
-        filename: "bundle.js"
+        filename: "bundle.js", //打包后的名字
+        publicPath: "http://localhost:9000/" //html引用路径，在这里是本地地址。
     },
     module: {
         loaders: [{
