@@ -3,8 +3,11 @@ A web app demo made of angular
 
 Usage:
 
-	Please install babel 6
-	npm install --global babel-cli
+	Please install webpack-dev-server
+	npm install --global webpack webpack-dev-server
+	
+	run:
+	webpack-dev-server --hot --port 9000
 
 
 Inspired by:
