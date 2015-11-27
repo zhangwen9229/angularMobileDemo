@@ -9,6 +9,10 @@ Usage:
 	run:
 	webpack-dev-server --hot --port 9000
 
+Hope to get help：
+	Help me upgrade Babel to 6.x
+	and so on.
+
 
 Inspired by:
 
