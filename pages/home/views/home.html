@@ -1,4 +1,4 @@
 <h1>Home</h1>
 <div ui-view>Only 1.bundle.js</div>
 
-<p>{{vm.testname}}</p>
+<p ng-bind-html="vm.testname|to_trusted"><!-- {{vm.testname}} --></p>
