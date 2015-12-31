@@ -15,7 +15,8 @@ module.exports = {
         app: [
             'webpack-dev-server/client?http://127.0.0.1:9000', // WebpackDevServer host and port
             'webpack/hot/dev-server',
-            __dirname + '/core/bootstrap.js'
+            __dirname + '/core/bootstrap.js',
+            __dirname + '/index.html'
         ]
     },
     output: {
@@ -43,7 +44,9 @@ module.exports = {
         // new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'index.html'
+            template: 'index.html',
+            hash: true,
+            inject: 'body'
         })
     ],
     devtool: 'eval-source-map',
