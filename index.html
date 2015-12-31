@@ -1,25 +1,34 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lazy load AngularJS with Webpack</title>
-  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/> -->
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <header class="row">
-      <nav class="col-xs-12">
-        <ul class="list-inline">
-          <li><a ui-sref="home">Home</a></li>
-          <li><a ui-sref="home.about">Home/About</a></li>
-          <li><a ui-sref="messages">Messages</a></li>
-          <li><a ui-sref="messages.all">Messages/All</a></li>
-          <li><a ui-sref="messages.new">Messages/New</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div ui-view></div>
-  </div>
- <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+    <div class="container">
+        <header class="row">
+            <nav class="col-xs-12">
+                <ul class="list-inline">
+                    <li>
+                        <a ui-sref="home">Home</a>
+                    </li>
+                    <li>
+                        <a ui-sref="home.about">Home/About</a>
+                    </li>
+                    <li>
+                        <a ui-sref="messages">Messages</a>
+                    </li>
+                    <li>
+                        <a ui-sref="messages.all">Messages/All</a>
+                    </li>
+                    <li>
+                        <a ui-sref="messages.new">Messages/New</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div ui-view></div>
+    </div>
+    <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
 </body>
 </html>

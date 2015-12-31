@@ -1,5 +1,6 @@
 var path = require('path'),
-    webpack = require('webpack');
+    webpack = require('webpack'),
+    HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // PATHS
 var PATHS = {
@@ -20,7 +21,7 @@ module.exports = {
     output: {
         path: PATHS.app + '/dist/',
         filename: "bundle.js", //打包后的名字
-        publicPath: "http://localhost:9000/" //html引用路径，在这里是本地地址。
+        // publicPath: "http://localhost:9000/" //html引用路径，在这里是本地地址。
     },
     module: {
         loaders: [{
@@ -28,7 +29,7 @@ module.exports = {
             loader: "style!css?sourceMap"
         }, {
             test: /\.js$/,
-            loader: 'ng-annotate!babel!jshint',
+            loader: 'ng-annotate!babel!jshint?sourceMap',
             exclude: /node_modules|bower_components/
         }, {
             test: /\.html$/,
@@ -39,7 +40,11 @@ module.exports = {
         }]
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        // new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'index.html'
+        })
     ],
     devtool: 'sourcemap',
     devServer: {
