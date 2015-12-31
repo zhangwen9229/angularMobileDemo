@@ -46,7 +46,7 @@ module.exports = {
             template: 'index.html'
         })
     ],
-    devtool: 'sourcemap',
+    devtool: 'eval-source-map',
     devServer: {
         historyApiFallback: true,
         stats: {
